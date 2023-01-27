@@ -1,0 +1,119 @@
+.container {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--clr-black);
+    display: flex;
+    align-items: center;
+    overflow-y: scroll;
+    padding: 50px 100px;
+    gap: 10px;
+  }
+
+  .left {
+    width: 50%;
+    height: 100%;
+    background-color: var(--clr-cream);
+    padding: 20px;
+    font-family: 'Caveat';
+    position: relative;
+  }
+
+  .left > h1 {
+    color: var(--clr-lightblack);
+    font-size: 4rem;
+    text-align: center;
+    border-bottom: 3px solid var(--clr-pink);
+  }
+  
+  .description {
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin-top: 30px;
+  }
+
+  .right {
+    width: 50%;
+    height: 100%;
+    background-color: var(--clr-pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .punch__container__right {
+    position: absolute;
+    width: 50px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .punch__right {
+    background-color: var(--clr-lightblack);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  .punch__container__left {
+    position: absolute;
+    width: 50px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .punch__left {
+    background-color: var(--clr-lightblack);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  .qbank {
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
+  }
+
+  .project__number {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 4rem;
+    transform: rotate(-25deg);
+  }
+
+  .arrow__left {
+    color: var(--clr-cream);
+    position: absolute;
+    left: 2.5%;
+    top: 50%;
+    transform: translate(-2.5%, -50%);
+    font-size: 3rem;
+    cursor: pointer;
+  }
+
+  .arrow__right {
+    color: var(--clr-cream);
+    position: absolute;
+    right: 2.5%;
+    top: 50%;
+    transform: translate(-2.5%, -50%);
+    font-size: 3rem;
+    cursor: pointer;
+  }

@@ -1,0 +1,113 @@
+.container {
+    height: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding: 0px 100px;
+    font-size: 2rem;
+    color: black;
+    font-weight: 600;
+    background-color: var(--clr-black);
+    font-family: var(--font-normal);
+}
+
+.links {
+    text-decoration: none;
+    color: var(--clr-yellow);
+    border: 2px solid var(--clr-yellow);
+    width: 140px;
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.links:hover {
+    background-color: var(--clr-yellow);
+    color: var(--clr-black);
+}
+
+.logo {
+    text-decoration: none;
+    color: var(--clr-cream);
+    padding: 10px;
+    cursor: pointer;
+    background-color: var(--clr-lightblack);
+}
+
+.logo:hover {
+    color: var(--clr-yellow);
+}
+
+.nav__left {
+    width: 100px;
+    margin-right: auto;
+}
+
+.nav__right {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bars {
+    display: none;
+}
+
+
+@media (width <=1100px) {
+    .nav__right {
+        display: none;
+    }
+
+    .bars {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .bars button {
+        width: 100px;
+        background-color: var(--clr-yellow);
+        border: 2px solid var(--clr-yellow);
+        padding: 10px;
+        border-radius: 50px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        padding: 0px 100px;
+    }
+
+    .links__container {
+        height: 250px;
+        top: 100px;
+        right: 0;
+        width: 100vw;
+        background-color: var(--clr-lightblack);
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        padding-right: 100px;
+    }
+
+    .links {
+        background-color: var(--clr-yellow);
+        color: var(--clr-black);
+    }
+
+    .links:hover {
+        background-color: var(--clr-black);
+        color: var(--clr-yellow);
+    }
+}

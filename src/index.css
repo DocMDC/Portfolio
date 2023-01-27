@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Caveat';
+  src: url(./caveat.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  --clr-black: #0f0d0e;
+  --clr-lightblack: #231f20;
+  --clr-yellow: #fcbb28;
+  --clr-cream: #f9f4da;
+  --clr-gray: #8d887c;
+  --clr-pink: #f38ba3;
+  --clr-green: #11a85b;
+  --font-bold: 'Paytone One', sans-serif;
+  --font-normal: 'Outfit', sans-serif;
+  --font-alternative: 'DM Sans', sans-serif;
+  --font-handwritten: 'Just Another Hand', sans-serif;
+}
+
+.home-container {
+  height: 100vh;
+}
+
+.projects-container {
+  height: 100vh;
+}
+
+
