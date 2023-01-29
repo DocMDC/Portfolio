@@ -27,4 +27,8 @@
   height: 100vh;
 }
 
+body {
+  background-color: var(--clr-black);
+}
+
 

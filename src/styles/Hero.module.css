@@ -223,3 +223,14 @@ button:hover {
     }
 }
 
+@media (700px <= width <=1100px) and (height <=450px) {
+    .right {
+        min-height: 500px;
+        margin-top: 0px;
+    }
+
+    .image__container {
+        height: auto;
+    }
+
+}

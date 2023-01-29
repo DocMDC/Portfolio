@@ -8,6 +8,17 @@ export default function Header () {
 
     const {isBarClicked, clickNav} = useContext(Context)
 
+    function downloadResume() {
+        fetch('resume.pdf').then(response => {
+            response.blob().then(blob => {
+                const fileURL = window.URL.createObjectURL(blob);
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'resume.pdf';
+                alink.click();
+            })
+        })
+    }
 
     return (
         <nav className={HeaderCSS.container}>
@@ -23,9 +34,9 @@ export default function Header () {
                 <Link to="/about" className={HeaderCSS.links}>
                     About
                 </Link>
-                <Link to="/contact" className={HeaderCSS.links}>
-                    Contact
-                </Link>
+                <div className={HeaderCSS.links} onClick={downloadResume}>
+                    Resume
+                </div>
             </div>
             <div className={HeaderCSS.bars}>
                 <button onClick={clickNav}>
@@ -33,16 +44,15 @@ export default function Header () {
                 </button>
             </div>
             {isBarClicked && <div className={HeaderCSS.links__container}>
-                {console.log('wtf')}
                 <Link to="/projects" className={HeaderCSS.links}>
                     Projects
                 </Link>
                 <Link to="/about" className={HeaderCSS.links}>
                     About
                 </Link>
-                <Link to="/contact" className={HeaderCSS.links}>
-                    Contact
-                </Link>
+                <div className={HeaderCSS.links} onClick={downloadResume}>
+                    Resume
+                </div>
             </div>}            
         </nav>
     )
