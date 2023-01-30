@@ -23,7 +23,7 @@ const dataArray = [
             <p>-Detailed explanations for each question choice</p>
             <p>-Dark mode</p>
             <p>-Text zooming for accessibility</p>
-            <li>Check out the application <a href="" target="_blank">here</a></li>
+            <li>Check out the application <a href="https://mdchristensen.com/Qbank/index.html" target="_blank">here</a></li>
             <li>Find the code <a href="https://github.com/DocMDC/qbank/tree/main/19_QuestionBank" target="_blank">here</a></li>
         </ul>]
     },
@@ -43,7 +43,7 @@ const dataArray = [
                 <p>-Utilization of hooks such as useState and useEffect</p>
                 <p>-The use of a complex form driven by state</p>
                 <p>-Dynamic mapping of content</p>
-                <li>Check out the application <a href="" target="_blank">here</a></li>
+                <li>Check out the application <a href="https://chic-dieffenbachia-fdac22.netlify.app/" target="_blank">here</a></li>
             <li>Find the code <a href="https://github.com/DocMDC/REIPhotoWebsite" target="_blank">here</a></li>
             </ul>
         ]
@@ -62,7 +62,7 @@ const dataArray = [
                 <p>-Object oriented programming</p>
                 <p>-Use of classes</p>
                 <p>-Dynamic score tracking</p>
-                <li>Check out the application <a href="" target="_blank">here</a></li>
+                <li>Check out the application <a href="https://mdchristensen.com/Pong/index.html" target="_blank">here</a></li>
             <li>Find the code <a href="https://github.com/DocMDC/100_JS_Challenges/tree/main/16_Pong" target="_blank">here</a></li>
             </ul>
         ]
