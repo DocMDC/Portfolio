@@ -2,7 +2,7 @@ import React, {useContext} from "react"
 import {Link} from "../../node_modules/react-router-dom"
 import {FaBars} from "react-icons/fa"
 import {Context} from "../Context"
-import HeaderCSS from "../styles/Header.module.css"
+import HeaderCSS from "../styles/Header.css"
 
 export default function Header () {
 
@@ -21,36 +21,36 @@ export default function Header () {
     }
 
     return (
-        <nav className={HeaderCSS.container}>
-            <div className={HeaderCSS.nav__left}>
-                <Link to="*" className={HeaderCSS.logo}>
+        <nav className='container'>
+            <div className='nav__left'>
+                <Link to="*" className="logo">
                     M.D.
                 </Link>
             </div>
-            <div className={HeaderCSS.nav__right}>
-                <Link to="/projects" className={HeaderCSS.links}>
+            <div className="nav__right">
+                <Link to="/projects" className="links">
                     Projects
                 </Link>
-                <Link to="/about" className={HeaderCSS.links}>
+                <Link to="/about" className="links">
                     About
                 </Link>
-                <div className={HeaderCSS.links} onClick={downloadResume}>
+                <div className="links" onClick={downloadResume}>
                     Resume
                 </div>
             </div>
-            <div className={HeaderCSS.bars}>
+            <div className="bars">
                 <button onClick={clickNav}>
                     <FaBars />
                 </button>
             </div>
-            {isBarClicked && <div className={HeaderCSS.links__container}>
-                <Link to="/projects" className={HeaderCSS.links}>
+            {isBarClicked && <div className="links__container">
+                <Link to="/projects" className="links">
                     Projects
                 </Link>
-                <Link to="/about" className={HeaderCSS.links}>
+                <Link to="/about" className="links">
                     About
                 </Link>
-                <div className={HeaderCSS.links} onClick={downloadResume}>
+                <div className="links" onClick={downloadResume}>
                     Resume
                 </div>
             </div>}            
