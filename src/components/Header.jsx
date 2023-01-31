@@ -2,7 +2,7 @@ import React, {useContext} from "react"
 import {Link} from "../../node_modules/react-router-dom"
 import {FaBars} from "react-icons/fa"
 import {Context} from "../Context"
-import HeaderCSS from "../styles/Header.css"
+import HeaderCSS from "../styles/Header.module.css"
 
 export default function Header () {
 
@@ -21,36 +21,36 @@ export default function Header () {
     }
 
     return (
-        <nav className='container'>
-            <div className='nav__left'>
-                <Link to="*" className="logo">
+        <nav className={HeaderCSS.container}>
+            <div className={HeaderCSS.nav__left}>
+                <Link to="*" className={HeaderCSS.logo}>
                     M.D.
                 </Link>
             </div>
-            <div className="nav__right">
-                <Link to="/projects" className="links">
+            <div className={HeaderCSS.nav__right}>
+                <Link to="/projects" className={HeaderCSS.links}>
                     Projects
                 </Link>
-                <Link to="/about" className="links">
+                <Link to="/about" className={HeaderCSS.links}>
                     About
                 </Link>
-                <div className="links" onClick={downloadResume}>
+                <div className={HeaderCSS.links} onClick={downloadResume}>
                     Resume
                 </div>
             </div>
-            <div className="bars">
+            <div className={HeaderCSS.bars}>
                 <button onClick={clickNav}>
                     <FaBars />
                 </button>
             </div>
-            {isBarClicked && <div className="links__container">
-                <Link to="/projects" className="links">
+            {isBarClicked && <div className={HeaderCSS.links__container}>
+                <Link to="/projects" className={HeaderCSS.links}>
                     Projects
                 </Link>
-                <Link to="/about" className="links">
+                <Link to="/about" className={HeaderCSS.links}>
                     About
                 </Link>
-                <div className="links" onClick={downloadResume}>
+                <div className={HeaderCSS.links} onClick={downloadResume}>
                     Resume
                 </div>
             </div>}            
