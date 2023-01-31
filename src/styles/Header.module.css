@@ -28,6 +28,10 @@
     cursor: pointer;
 }
 
+.links__container {
+    display: none;
+}
+
 .links:hover {
     background-color: var(--clr-yellow);
     color: var(--clr-black);
@@ -109,5 +113,42 @@
     .links:hover {
         background-color: var(--clr-black);
         color: var(--clr-yellow);
+    }
+}
+
+@media (width <= 750px) {
+    .container {
+        height: 70px;
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+        padding: 5px;
+    }
+
+    .bars button {
+        width: 75px;
+        height: 30px;
+    }
+
+    .nav__left {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .links__container {
+        height: 150px;
+        top: 70px;
+        padding-right: 0px;
+        align-items: center;
+    }
+
+    .links {
+        height: 75px;
+        height: 30px;
+        font-size: 1rem;
     }
 }

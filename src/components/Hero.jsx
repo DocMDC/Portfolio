@@ -11,22 +11,22 @@ export default function Hero() {
             <div className={HeroCSS.left}>
                 <div className={HeroCSS.left__content}>
                     <h1 className={HeroCSS.title}>HEY THERE, FRIEND</h1>
-                    <div className={HeroCSS.subtitle__container}>
-                        <h2 className={HeroCSS.subtitle}>I'm Michael. A front-end developer and medical doctor ready to help your business succeed.</h2>
+                    <div className={HeroCSS.subtitle}>
+                        <h2>I'm Michael. A front-end developer and medical doctor ready to help your business succeed.</h2>
                     </div>
                     <Link to="/projects"><button className={HeroCSS.cta}>MY WORK</button></Link>
                 </div>
             </div>
             <div className={HeroCSS.right}>
-                <div className={HeroCSS.image__container}>
+                <div className={HeroCSS.right__content}>
                     <div className={HeroCSS.image__one__background}>
-                        <img src={qbank} alt='qbank image' className={HeroCSS.qbank}/>
+                        <img src={qbank} alt='qbank image' />
                     </div>
                     <div className={HeroCSS.image__two__background}>
-                        <img src={website} alt='website image' className={HeroCSS.website}/>
+                        <img src={website} alt='website image'/>
                     </div>
                     <div className={HeroCSS.image__three__background}>
-                        <img src={pong} alt='pong image' className={HeroCSS.pong}/>
+                        <img src={pong} alt='pong image'/>
                     </div>
                 </div>
             </div>

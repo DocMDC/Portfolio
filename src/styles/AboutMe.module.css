@@ -99,7 +99,11 @@
     }
 }
 
-@media (width <= 700px) {
+@media (width <= 750px) {
+    .container {
+        top: 70px;
+    }
+    
     .right {
         min-width: 400px;
     }
@@ -107,5 +111,23 @@
     .right > h1 {
         font-size: 2.3rem;
         margin-bottom: 30px;
+    }
+}
+
+@media (width <= 500px) {
+    .container {
+        min-height: auto;
+    }
+    .left {
+        width: 100vw;
+    }
+
+    .right {
+        min-width: 320px;
+        padding: 10px;
+    }
+    
+    .left > img {
+        width: 300px;
     }
 }

@@ -1,8 +1,5 @@
 import React, {useState} from "react"
 import ProjectCSS from "../styles/Project.module.css"
-import qbank from "../images/qbank.png"
-import website from "../images/website.png"
-import pong from "../images/pong.png"
 import {FaRegArrowAltCircleLeft, FaRegArrowAltCircleRight} from "react-icons/fa"
 import dataArray from "../data"
 
