@@ -24,7 +24,7 @@ const dataArray = [
             <p>-Dark mode</p>
             <p>-Text zooming for accessibility</p>
             <li>Check out the application <a href="https://mdchristensen.com/Qbank/index.html" target="_blank">here</a></li>
-            <li>Find the code <a href="https://github.com/DocMDC/qbank/tree/main/19_QuestionBank" target="_blank">here</a></li>
+            <li>Find the code <a href="https://github.com/DocMDC/100_JS_Challenges/tree/main/19_QuestionBank" target="_blank">here</a></li>
         </ul>]
     },
     {
