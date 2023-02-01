@@ -191,7 +191,7 @@
     }
 
     .description {
-      font-size: 0.9rem;
+      font-size: 0.85rem;
     }
 
     .project__number {
@@ -204,6 +204,16 @@
   
     .arrow__right {
       font-size: 2rem;
+    }
+
+    .punch__container__left, .punch__container__right {
+      margin: 0px;
+      padding: 10px 0px;
+    }
+
+    .punch__left, .punch__right {
+      width: 15px;
+      height: 15px;
     }
 
   }
@@ -238,12 +248,7 @@
     }
 
     .description {
-      font-size: 0.6rem;
-    }
-
-    .punch__container__left, .punch__container__right {
-      margin: 0px;
-      padding: 10px 0px;
+      font-size: 0.55rem;
     }
 
     .project__number {
