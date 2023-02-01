@@ -32,7 +32,7 @@ const dataArray = [
         projectNumber: "#2",
         img: website,
         color: '#11a85b',
-        title: 'Photography Website',
+        title: 'Photo Website',
         content: [
             <ul key='1'>
                 <li>Written in html, css, and React</li>
