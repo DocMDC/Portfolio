@@ -121,7 +121,7 @@
     cursor: pointer;
   }
 
-  @media (width <= 1500px) {    
+  @media (max-width: 1500px) {    
     .left > h1 {
       font-size: 2.5rem;
       padding-bottom: 10px;
@@ -136,7 +136,7 @@
     }
   }
 
-  @media (width <= 1300px) {
+  @media (max-width: 1300px) {
     .left {
       height: 75%;
     }
@@ -156,7 +156,7 @@
     }
   }
 
-  @media (width <= 1100px) {
+  @media (max-width: 1100px) {
     .container {
       flex-direction: column;
     }
@@ -167,13 +167,13 @@
     }
   }
 
-  @media (width <=750px) {
+  @media (max-width: 750px) {
     .container {
       top: 70px;
     }
   }
 
-  @media (width <= 650px) {
+  @media (max-width: 650px) {
     .container {
       top: 70px;
       padding: 10px;
@@ -208,7 +208,7 @@
 
   }
 
-  @media (width <= 400px) {
+  @media (max-width: 400px) {
     .container {
       padding: 0px;
       min-height: 680px;
